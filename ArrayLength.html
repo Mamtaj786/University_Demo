@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length</title>
+</head>
+
+<body>
+    <p id="test"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango", "kiwi"];
+        let flen = fruits.length;
+        let text = "<ul>";
+
+        for (let i = 0; i <= flen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+
+
+
+        }
+        text += "</ul>";
+         const fruits1 = ["Kiwi", "Orange"]
+        const whatever = [...fruits, ...fruits1]
+        for (const item in whatever){
+            console.log(item)
+        }
+        console.log(whatever)
+             //document.getElementById("test").innerHTML = text
+        //}
+        const object = {
+            firstName: "John",
+            lastName: "Don",
+            age: 50
+        };
+
+        for (const key in object) {
+            console.log(`${key}: ${object[key]}`)
+        }
+    </script>
+</body>
+
+</html>
